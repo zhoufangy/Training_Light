@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<snippet id="header" />
+  <!-- build:css css/style.css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.less" />
+  <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <!-- endbuild -->
+
+	<title>Training_Light</title>
+</head>
+<body>
+  <div id="main">
+    <view id="index"  />
+    <view id="index/main" parent="index"  home="true"/>
+    <view id="index/shop" parent="index"  />
+    <view id="index/user" parent="index"  />
+    <view id="login" />
+    <view id="login/success" />
+  </div>
+  <snippet id="footer" />
+</body>
+
+  <script type="text/javascript" src="//res.lightyy.com/lighting/framework/light-1.0.min.js"></script>
+  <script type="text/javascript" src="js/lib/zepto.js"></script>
+
+  <!-- build:js js/app.js -->
+  <!--<script type="text/javascript" src="js/lib/underscore.js"></script>-->
+  <!-- inject:view -->
+  <!-- endinject -->
+
+  <!-- endbuild -->
+
+  <script type="text/javascript">
+    App.start();
+  </script>
+</html>
