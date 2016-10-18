@@ -6,7 +6,6 @@
        methods:{}
      },{
      beforeRender:function () {
-  
      }
   });
 })();

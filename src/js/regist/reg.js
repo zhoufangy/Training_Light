@@ -9,17 +9,20 @@ App.registerView({
     path:"/captcha",
     el:"#captcha",
     home:false,
+    parent:"#reg",
     async:"true"
 });
 
 App.registerView({
     path:"/reginfo",
     el:"#reginfo",
-    home:false
+    home:false,
+    parent:"#reg"
 });
 
 App.registerView({
     path:"/reg/success",
     el:"#regSuccess",
-    home:false
+    home:false,
+    parent:"#reg"
 });

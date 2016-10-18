@@ -6,8 +6,6 @@
        methods:{}
      },{
      beforeRender:function () {
-     	$("#main").removeClass("indexMain");
-     	$("#main").addClass("indexShop");
      }
   });
 })();
