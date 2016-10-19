@@ -1,6 +1,6 @@
 
 ;(function(){
-  App.defineViewModel("#login",{
+  App.defineViewModel("#top",{
        data:{},
        watch:{},
        methods:{}
@@ -8,7 +8,4 @@
      beforeRender:function () {
      }
   });
-    $(".reg-btn").click(function () {
-        App.navigate("reg");
-    })
 })();

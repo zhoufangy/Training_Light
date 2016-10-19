@@ -9,17 +9,20 @@ App.registerView({
     path:"/captcha",
     el:"#captcha",
     home:false,
+    parent:"#reset",
     async:"true"
 });
 
 App.registerView({
     path:"/resetpw",
     el:"#resetpw",
-    home:false
+    home:false,
+    parent:"#reset"
 });
 
 App.registerView({
     path:"/reset/success",
     el:"#resetSuccess",
-    home:false
+    home:false,
+    parent:"#reset"
 });

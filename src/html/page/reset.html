@@ -8,21 +8,25 @@
   <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
   <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://light.hscloud.cn/portal/css/indexcss.css">
+  <link type="image/x-icon" rel="bookmark" href="../../images/favicon.ico">
+  <link type="image/x-icon" rel="icon" href="../../images/favicon.ico">
+  <link type="image/x-icon" rel="shortcut icon" href="../../images/favicon.ico">
   <title>重置密码</title>
 </head>
 <body>
   <div id="main">
     <view id="reset" home="true" />
-    <view id="captcha" async="true" />
-    <view id="resetpw" />
-    <view id="reset/success" />
+    <view id="captcha" async="true" parent="reset"/>
+    <view id="resetpw" parent="reset"/>
+    <view id="reset/success" parent="reset"/>
   </div>
 
   <snippet id="footer" />
 </body>
 
-  <script type="text/javascript" src="//res.lightyy.com/lighting/framework/light-1.0.min.js"></script>
   <script type="text/javascript" src="js/lib/zepto.js"></script>
+  <script type="text/javascript" src="//res.lightyy.com/lighting/framework/light-1.0.min.js"></script>
+
   <!-- build:js js/app.js -->
   <!--<script type="text/javascript" src="js/lib/underscore.js"></script>-->
   <!-- inject:view -->
