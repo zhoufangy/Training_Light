@@ -11,11 +11,11 @@
 
      }
   });
-    $(".captcha-btn").click(function () {
+    $(".captcha-btn").tap(function () {
         $("#reset .container").hide();
         App.navigate("captcha");
     });
-    $(".next-btn").click(function () {
+    $(".next-btn").tap(function () {
         $("#captcha .container").hide();
         App.navigate("resetpw");
     });

@@ -6,6 +6,10 @@
        methods:{}
      },{
      beforeRender:function () {
-     }
+         $.backstretch("../../../../images/bg.png");
+     },
+      beforeUnRender:function () {
+          $.backstretch("../../../../images/bg1.jpg");
+      }
   });
 })();

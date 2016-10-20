@@ -8,7 +8,7 @@
      beforeRender:function () {
      }
   });
-    $(".reg-btn").click(function () {
+    $(".reg-btn").tap(function () {
         App.navigate("reg");
     })
 })();

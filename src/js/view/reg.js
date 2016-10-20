@@ -8,11 +8,11 @@
       beforeRender: function () {
       }
   });
-  $(".captcha-btn").click(function () {
+  $(".captcha-btn").tap(function () {
       $("#reg .container").hide();
       App.navigate("captcha");
   });
-    $(".next-btn").click(function () {
+    $(".next-btn").tap(function () {
         $("#captcha .container").hide();
         App.navigate("reginfo");
     });
