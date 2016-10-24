@@ -12,11 +12,21 @@
      }
   });
     $(".captcha-btn").tap(function () {
-        $("#reset .container").hide();
-        App.navigate("captcha");
+        var resetNum=$("#resetNum").val();
+        if(resetNum&&1){
+            $("#reset .container").hide();
+            App.navigate("captcha");
+        }else{
+            alert("手机号码不能为空！");
+        }
     });
     $(".next-btn").tap(function () {
-        $("#captcha .container").hide();
-        App.navigate("resetpw");
+        var vcode=$("#vcode").val();
+        if(vcode&&1){
+            $("#captcha .container").hide();
+            App.navigate("resetpw");
+        }else{
+            alert("验证码不能为空！");
+        }
     });
 })();
